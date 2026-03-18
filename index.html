@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Stylish Photo Card</title>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        position: relative;
+        text-align: center;
+    }
+
+    /* Sunflower glow background */
+    .sunflower {
+        position: absolute;
+        top: -80px;
+        left: -60px;
+        width: 200px;
+        height: 200px;
+        background: url('sunflower.png') no-repeat center/cover;
+        filter: drop-shadow(0 0 40px gold);
+        z-index: 0;
+    }
+
+    /* Main card */
+    .card {
+        position: relative;
+        width: 300px;
+        border-radius: 25px;
+        padding: 10px;
+        background: rgba(0,0,0,0.6);
+        box-shadow: 0 0 25px gold;
+        z-index: 1;
+    }
+
+    .image-top {
+        width: 100%;
+        height: 200px;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+        filter: grayscale(100%);
+    }
+
+    .image-bottom {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        filter: grayscale(100%);
+        border-radius: 0 0 20px 20px;
+    }
+
+    .divider {
+        height: 2px;
+        background: rgba(255,255,255,0.3);
+        margin: 5px 0;
+    }
+
+    /* Text styling */
+    .text {
+        margin-top: 20px;
+        color: white;
+    }
+
+    .text h1 {
+        margin: 0;
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+
+    .text p {
+        margin: 5px 0 0;
+        font-size: 16px;
+        opacity: 0.8;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="sunflower"></div>
+
+    <div class="card">
+        <img src="unnamed(7).jpg" class="image-top">
+        <div class="divider"></div>
+        <img src="IMG_20260318_132600.jpg" class="image-bottom">
+    </div>
+
+    <div class="text">
+        <h1>SIJU_EDITZ</h1>
+        <p>TU</p>
+    </div>
+</div>
+
+</body>
+</html>
